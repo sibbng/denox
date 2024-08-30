@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-write ./mod.ts"
+  },
+  "nodeModules": "local-auto",
+  "imports": { "esbuild": "npm:esbuild@^0.23.1", "noren": "npm:noren@^0.4.7" },
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+  }
+}
